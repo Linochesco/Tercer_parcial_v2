@@ -8,11 +8,25 @@
         <item
             android:id="@+id/nav_nave1"
             android:icon="@drawable/ic_atracciones"
-            android:title="Nave 1" />
+            android:title="Nave 1: Feria Tabasco" />
+        <item
+            android:id="@+id/nav_nave2"
+            android:icon="@drawable/ic_star"
+            android:title="Nave 2: Atracciones y conciertos" />
+
+        <item
+            android:id="@+id/nav_nave3"
+            android:icon="@drawable/ic_comida"
+            android:title="Nave 3: Alimentos y bebidas" />
+
+        <item
+            android:id="@+id/nav_nave4"
+            android:icon="@drawable/ic_compras"
+            android:title="Nave 4: Ventas" />
+
         <item
             android:id="@+id/nav_gatitos"
-            android:title="Gatitos"
+            android:title="@string/menu_gatitos"
             android:icon="@drawable/ic_gatitos" />
-
     </group>
 </menu>

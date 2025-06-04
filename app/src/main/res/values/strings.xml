@@ -7,5 +7,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="menu_gatitos">Gatitos</string>
+    <string name="menu_nave1">Nave 1</string>
+    <string name="menu_nave2">Nave 2</string>
+    <string name="menu_nave3">Nave 3</string>
+    <string name="menu_nave4">Nave 4</string>
 
 </resources>

@@ -16,5 +16,21 @@
         android:name="com.msh.tercer_parcial.Nave1Fragment"
         android:label="Nave 1" />
 
+    <fragment
+        android:id="@+id/nav_nave2"
+        android:name="com.msh.tercer_parcial.Nave2Fragment"
+        android:label="@string/menu_nave2"
+        tools:layout="Nave2" />
 
+    <fragment
+        android:id="@+id/nav_nave3"
+        android:name="com.msh.tercer_parcial.Nave3Fragment"
+        android:label="@string/menu_nave3"
+        tools:layout="Nave3" />
+
+    <fragment
+        android:id="@+id/nav_nave4"
+        android:name="com.msh.tercer_parcial.Nave4Fragment"
+        android:label="@string/menu_nave4"
+        tools:layout="Nave4" />
 </navigation>
