@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose) // <- plugin obligatorio desde Kotlin 2.0
+    alias(libs.plugins.kotlin.compose) // Plugin obligatorio desde Kotlin 2.0
+    id("org.jetbrains.kotlin.kapt")    // ✅ Necesario para usar kapt con Glide
 }
 
 android {
@@ -48,6 +49,7 @@ android {
 }
 
 dependencies {
+    // AndroidX y Jetpack (ya incluidos)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -64,8 +66,20 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview:1.5.3")
     debugImplementation("androidx.compose.ui:ui-tooling:1.5.3")
 
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    kapt("com.github.bumptech.glide:compiler:4.16.0")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // OkHttp Logging Interceptor (opcional pero útil para debugging)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+
     // Testing
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+

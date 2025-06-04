@@ -26,6 +26,11 @@
         android:id="@+id/nav_nave1"
         android:name="com.msh.tercer_parcial.Nave1Fragment"
         android:label="Nave 1" />
+    <fragment
+        android:id="@+id/nav_gatitos"
+        android:name="com.msh.tercer_parcial.ui.gatitos.GatitosFragment"
+        android:label="Gatitos"
+        tools:layout="@layout/fragment_gatitos" />
 
 
 </navigation>
